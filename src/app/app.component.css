@@ -1,0 +1,36 @@
+.wraper {
+    background-color: dodgerblue;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+* {
+    /* background-image: url(https://i0.wp.com/criptotendencia.com/wp-content/uploads/2019/07/Mercados-Financierso-Tradicionales-Resumen-26719.jpg?fit=1920%2C1080&ssl=1); */
+
+    background-image: url(https://www.ieb.es/wp-content/uploads/2017/10/nasdaq.jpg);
+
+    background-size: cover;
+    /* height: 100vh; */
+    /* background-repeat: repeat-y; */
+    background-attachment: fixed;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.foto {
+    margin-top: -65px;
+    /* height: 100vh; */
+       
+}
+
+.margen {
+    height: 2vh;
+}
+
+
+
+

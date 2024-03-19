@@ -1,0 +1,52 @@
+
+.titulo {
+    background-color: white;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: solid black 10px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    width: 75%;
+    
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    background-color: black;
+    list-style: none;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 3vh;
+}
+
+li {
+    color: white;
+    font-size: 20px;
+    width: 18%;
+    text-align: center;    
+}
+
+li:hover {
+    font-size: 23px;
+    font-weight: bold;
+}

@@ -18,10 +18,11 @@ export class DestacadoComponent {
   async ngOnInit() {
     const subidas = await this.destacadosService.getBestSubidas()
     console.log(subidas);
+    this.arrSubidas = subidas
 
     const bajadas = await this.destacadosService.getBestBajadas()
     console.log(bajadas);
-    
+    this.arrBajadas = bajadas
     
   }
 

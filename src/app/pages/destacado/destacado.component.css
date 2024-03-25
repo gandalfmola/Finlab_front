@@ -1,0 +1,34 @@
+.wraper {
+    background-color: gray;
+    /* height: 60vh; */
+    margin: 20px auto;
+    border: solid black 5px;
+    opacity: 0.88;
+}
+
+article.cabecera {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 5px;
+    border: solid black 4px;
+    margin: 10px auto;
+    padding: 1px;
+    background-color:cadetblue;
+    gap: 70px;   
+    font-weight: bold; 
+}
+
+.subidas {
+    background-color:green;
+}
+
+.bajadas {
+    background-color: red;
+}
+
+article.registro {
+    background-color: greenyellow;
+}

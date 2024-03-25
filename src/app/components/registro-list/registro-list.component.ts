@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Iregistro } from 'src/app/interfaces/registro.interface';
 import { DiarioService } from 'src/app/services/diario.service';
 
@@ -9,20 +9,16 @@ import { DiarioService } from 'src/app/services/diario.service';
 })
 export class RegistroListComponent {
 
-  arrRegistros!: Iregistro[];
+  @Input() arrRegistros!: Iregistro[];
 
-  diarioService = inject(DiarioService)
+  // diarioService = inject(DiarioService)
 
-  async ngOnInit() {
-    const response = await this.diarioService.getSomeRegistros();
-    console.log(response);
+  // async ngOnInit() {
+  //   const response = await this.diarioService.getSomeRegistros();
+  //   console.log(response); 
+
+  //   this.arrRegistros = response
     
-    // for (let asiento of response) {
-    //   asiento.fecha = ""
-    // }
-
-    this.arrRegistros = response
-    
-  }
+  // }
 
 }

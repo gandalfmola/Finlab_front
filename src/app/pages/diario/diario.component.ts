@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { Iregistro } from 'src/app/interfaces/registro.interface';
 import { DiarioService } from 'src/app/services/diario.service';
 
 @Component({
@@ -8,12 +9,22 @@ import { DiarioService } from 'src/app/services/diario.service';
 })
 export class DiarioComponent {
 
+  arrRegistrosDiario!: Iregistro[];
+
   diarioService = inject(DiarioService)
+
+  async ngOnInit() {
+      const response = await this.diarioService.getSomeRegistros();
+      console.log(response); 
+  
+      this.arrRegistrosDiario = response
+      
+    }
 
 
   async cargaBase() {
 
-    this.diarioService.prueba("2024-03-15", "2024-03-19")       
+    this.diarioService.prueba("2024-03-15", "2024-03-25")       
     
   }
 }

@@ -132,20 +132,18 @@ export class DiarioService {
   // este método hace una petición a la API cada 15 segundos
 
   async prueba(inicio:string, fin:string) {
-    console.log("Inicio de la prueba");
+    console.log("Inicio de la carga");
     let fechaComienzo = inicio
     console.log(fechaComienzo);
     const fechaActual = fin
     console.log(fechaActual);
-    console.log(fechaComienzo.localeCompare(fechaActual));   
-    
+    console.log(fechaComienzo.localeCompare(fechaActual));       
 
     while(fechaComienzo.localeCompare(fechaActual) != 0) {
       console.log("ENTRA EN EL BUCLE");
       
       await this.sleep(15000);
-      let response = await this.registerDay(fechaComienzo);     
-
+      let response = await this.registerDay(fechaComienzo); 
 
       const fechaNumber = this.deStringToNumber(fechaComienzo)
       const fechaMasUno = this.sumaUnDia(fechaNumber)       
@@ -154,10 +152,8 @@ export class DiarioService {
     }
     
     console.log("FIN DEL BUCLE");
-    console.log("fecha comienzo: ", fechaComienzo);
-    
-    console.log("fin de la prueba");
-    
+    console.log("fecha comienzo: ", fechaComienzo);    
+    console.log("fin de la carga");    
     
   }
 

@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { IregistroCorto } from 'src/app/interfaces/registro-corto.interface';
 import { Iregistro } from 'src/app/interfaces/registro.interface';
 import { DestacadosService } from 'src/app/services/destacados.service';
 
@@ -9,20 +10,18 @@ import { DestacadosService } from 'src/app/services/destacados.service';
 })
 export class DestacadoComponent {
 
-  arrSubidas!: Iregistro[];
-  arrBajadas!: Iregistro[];
+  arrSubidas: IregistroCorto[] = []
+  arrBajadas: IregistroCorto[] = []
 
   destacadosService = inject(DestacadosService)
 
 
   async ngOnInit() {
     const subidas = await this.destacadosService.getBestSubidas()
-    console.log(subidas);
-    this.arrSubidas = subidas
+    this.arrSubidas = this.destacadosService.transformArray(subidas, this.arrSubidas)
 
-    const bajadas = await this.destacadosService.getBestBajadas()
-    console.log(bajadas);
-    this.arrBajadas = bajadas
+    const bajadas = await this.destacadosService.getBestBajadas()    
+    this.arrBajadas = this.destacadosService.transformArray(bajadas, this.arrBajadas)
     
   }
 

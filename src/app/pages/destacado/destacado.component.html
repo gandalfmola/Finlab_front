@@ -1,43 +1,18 @@
 
 
 
-<div class="subidas">
+<div class="contenedor">
 
-    <section>
-        <h3>SUBIDAS</h3>
-        
-        <article class="cabecera">
-            <p>FECHA</p>
-            <p>EMPRESA</p>
-            <p>APERTURA</p>
-            <p>MAX</p>
-            <p>MIN</p>
-            <p>CIERRE</p>
-            <p>VARIACIÓN</p>
-            <P>PORCENTAJE</P>
-        </article>
+    <section class="subidas">
+        <h3>SUBIDAS</h3>       
 
         <app-registro-list [arrRegistros]="arrSubidas"></app-registro-list>
     </section>
 
-</div>
 
-
-<div>
 
     <section class="bajadas">
-        <h3>BAJADAS</h3>
-
-        <article class="cabecera">
-            <p>FECHA</p>
-            <p>EMPRESA</p>
-            <p>APERTURA</p>
-            <p>MAX</p>
-            <p>MIN</p>
-            <p>CIERRE</p>
-            <p>VARIACIÓN</p>
-            <P>PORCENTAJE</P>
-        </article>
+        <h3>BAJADAS</h3>        
 
         <app-registro-list [arrRegistros]="arrBajadas"></app-registro-list>
     </section>

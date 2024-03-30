@@ -7,10 +7,12 @@
     margin: 20px auto;
     border: solid black 5px;
     opacity: 0.88;
-    height: 58vh;
+    /* height: 58vh; */
 }
 
 h3 {
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
     padding: 5px;
 }
@@ -19,21 +21,28 @@ h3 {
     background-color:green;
     width: 50%;
     height: 100%;
+    padding-bottom: 15px;
 }
 
 .bajadas {
     background-color: rgb(172, 2, 2);
     width: 50%;
     height: 100%;
+    padding-bottom: 15px;
 }
 
 section.subidas app-registro-list {
     background-color: greenyellow !important;
+    
     /* color: red; */
     & article {
         background-color: greenyellow !important;
         align-items: flex-end;
         flex-wrap: wrap;
+        & p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 30%;
+        }
     }
 }
 
@@ -41,15 +50,12 @@ section.bajadas app-registro-list {
     background-color: greenyellow !important;
     /* color: red; */
     & article {
-        background-color:rgb(247, 10, 10) !important;
-        flex-wrap: wrap;
-        border-radius: 80px;
-        width: 30%;
-        padding: 20px 5px;
-        margin: 20px auto;
+        background-color:rgb(243, 55, 55) !important;
+        align-items: flex-end;
+        flex-wrap: wrap;        
         & p {
-            color: yellow;
-            gap: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 30%;
             
         }
     }

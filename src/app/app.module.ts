@@ -12,7 +12,8 @@ import { LaboratorioComponent } from './pages/laboratorio/laboratorio.component'
 import { FooterComponent } from './components/footer/footer.component';
 import { RegistroCardComponent } from './components/registro-card/registro-card.component';
 import { RegistroListComponent } from './components/registro-list/registro-list.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { DesplegableIntervaloComponent } from './components/desplegable-intervalo/desplegable-intervalo.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http'
     LaboratorioComponent,
     FooterComponent,
     RegistroCardComponent,
-    RegistroListComponent
+    RegistroListComponent,
+    DesplegableIntervaloComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,11 @@
 .contenedor {
-    background-color: gray;
+    /* background-color: gray; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 20px auto;
-    border: solid black 5px;
+    /* border: solid black 5px; */
     opacity: 0.88;
     /* height: 58vh; */
 }
@@ -29,6 +29,12 @@ h3 {
     width: 50%;
     height: 100%;
     padding-bottom: 15px;
+}
+
+.intervalo {
+    width: 70%;
+    /* background-color: white; */
+    margin: 10px auto;
 }
 
 section.subidas app-registro-list {

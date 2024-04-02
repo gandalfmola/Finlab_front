@@ -3,6 +3,10 @@
 
 <div class="contenedor">
 
+    <section class="intervalo">
+        <app-desplegable-intervalo [arrIntervalos]="listaIntervalos" (elegidoIntervalo)="intervaloSeleccionado($event)"></app-desplegable-intervalo>
+    </section>
+
     <section class="subidas">
         <h3>SUBIDAS</h3>       
 

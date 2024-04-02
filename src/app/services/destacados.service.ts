@@ -33,7 +33,7 @@ export class DestacadosService {
         nuevaSubida.fecha = subida.fecha
         nuevaSubida.empresa = subida.empresa;
         nuevaSubida.variacion_porcentaje = subida.variacion_porcentaje;
-        console.log(nuevaSubida);
+        // console.log(nuevaSubida);
         
         propiedad.push(nuevaSubida)
       }

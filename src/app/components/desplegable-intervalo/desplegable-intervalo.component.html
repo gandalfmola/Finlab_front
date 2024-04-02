@@ -1,0 +1,10 @@
+<div>
+
+    <select (change)="selectIntervalo($event)">
+        <option value="" class="estatica">Elige un intervalo</option>
+        <option *ngFor="let intervalo of arrIntervalos" [value]="intervalo">
+            {{intervalo}}
+        </option>
+    </select>
+
+</div>

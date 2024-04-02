@@ -1,0 +1,18 @@
+
+div {
+    
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    background-color: yellow;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    opacity: 0.88;
+}
+
+option {
+    opacity: 0.50;
+}

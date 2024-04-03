@@ -19,15 +19,15 @@ export class DestacadoComponent {
 
 
   async ngOnInit() {
-    const subidas = await this.destacadosService.getBestSubidas()
+    const subidas = await this.destacadosService.getBestSubidasInt(1)
     this.arrSubidas = this.destacadosService.transformArray(subidas, this.arrSubidas)
 
-    const bajadas = await this.destacadosService.getBestBajadas()    
+    const bajadas = await this.destacadosService.getBestBajadasInt(1)    
     this.arrBajadas = this.destacadosService.transformArray(bajadas, this.arrBajadas)
     
   }
 
-  intervaloSeleccionado($event:String) {
+  async intervaloSeleccionado($event:String) {
     console.log($event, "en el padre");
     let seleccion = 0
 
@@ -38,19 +38,28 @@ export class DestacadoComponent {
       case "último mes":
         seleccion = 30;
         break;
-        case "último trimestre":
-          seleccion = 90;
-          break;
-          case "último año":
-            seleccion = 365;
-            break;
-          default:
-            seleccion = 7;
-            console.log("que haces cabrón");
-            break;        
+      case "último trimestre":
+        seleccion = 90;
+        break;
+      case "último año":
+        seleccion = 365;
+        break;
+      default:
+        seleccion = 7;
+        console.log("que haces cabrón");
+        break;        
     }
-
     console.log(seleccion);
+
+    const subidas = await this.destacadosService.getBestSubidasInt(seleccion)
+    console.log(subidas);
+    this.arrSubidas = [];
+    this.arrSubidas = this.destacadosService.transformArray(subidas, this.arrSubidas)
+    
+    const bajadas = await this.destacadosService.getBestBajadasInt(seleccion)
+    console.log(bajadas);
+    this.arrBajadas = [];
+    this.arrBajadas = this.destacadosService.transformArray(bajadas, this.arrBajadas)
     
 
     

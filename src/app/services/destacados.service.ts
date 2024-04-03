@@ -18,11 +18,26 @@ export class DestacadosService {
     )
   }
 
+  // este método es el que trae las mayores subidas ya con un intervalo seleccionado
+  getBestSubidasInt(intervalo:number) {
+    return firstValueFrom(
+      this.httpClient.get<Iregistro[]>(`http://localhost:3000/api/destacados/subidas/${intervalo}`)
+    )
+  }
+
   // este método se trae las mayores bajadas
   getBestBajadas() {
     return firstValueFrom(
       this.httpClient.get<Iregistro[]>("http://localhost:3000/api/destacados/bajadas")
     )
+  }
+
+  // este método trae las mayores bajadas con un intervalo seleccionado por el usuario
+  getBestBajadasInt(intervalo: number) {
+    return firstValueFrom(
+      this.httpClient.get<Iregistro[]>(`http://localhost:3000/api/destacados/bajadas/${intervalo}`)
+    )
+    
   }
 
   // este método convierte un array de Iregistro en un array de IregistroCorto

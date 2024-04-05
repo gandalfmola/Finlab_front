@@ -19,10 +19,10 @@ export class DestacadoComponent {
 
 
   async ngOnInit() {
-    const subidas = await this.destacadosService.getBestSubidasInt(1)
+    const subidas = await this.destacadosService.getBestSubidasInt(5)
     this.arrSubidas = this.destacadosService.transformArray(subidas, this.arrSubidas)
 
-    const bajadas = await this.destacadosService.getBestBajadasInt(1)    
+    const bajadas = await this.destacadosService.getBestBajadasInt(5)    
     this.arrBajadas = this.destacadosService.transformArray(bajadas, this.arrBajadas)
     
   }

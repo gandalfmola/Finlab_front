@@ -1,0 +1,23 @@
+<form [formGroup]="formulario" (ngSubmit)="enviado()">
+
+    <div>
+        <label>Porcentaje de subida</label>
+        <input type="number" formControlName="subida">
+    </div>
+
+    <div>
+        <label>Lapso de tiempo</label>
+        <input type="number" formControlName="lapso">
+    </div>
+
+    <div>
+        <label>Porcentaje de beneficio para venta</label>
+        <input type="number" formControlName="beneficio">
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+
+
+</form>

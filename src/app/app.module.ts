@@ -13,7 +13,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RegistroCardComponent } from './components/registro-card/registro-card.component';
 import { RegistroListComponent } from './components/registro-list/registro-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DesplegableIntervaloComponent } from './components/desplegable-intervalo/desplegable-intervalo.component'
+import { DesplegableIntervaloComponent } from './components/desplegable-intervalo/desplegable-intervalo.component';
+import { FormularioParametrosComponent } from './components/formulario-parametros/formulario-parametros.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,15 @@ import { DesplegableIntervaloComponent } from './components/desplegable-interval
     FooterComponent,
     RegistroCardComponent,
     RegistroListComponent,
-    DesplegableIntervaloComponent
+    DesplegableIntervaloComponent,
+    FormularioParametrosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

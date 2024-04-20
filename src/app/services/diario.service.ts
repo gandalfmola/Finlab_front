@@ -134,7 +134,7 @@ export class DiarioService {
   async prueba(inicio:string, fin:string) {
     console.log("Inicio de la carga");
     let fechaComienzo = inicio
-    console.log(fechaComienzo);
+    console.log("fecha comienzo: ", fechaComienzo);
     const fechaActual = fin
     console.log(fechaActual);
     console.log(fechaComienzo.localeCompare(fechaActual));       
@@ -152,7 +152,7 @@ export class DiarioService {
     }
     
     console.log("FIN DEL BUCLE");
-    console.log("fecha comienzo: ", fechaComienzo);    
+    console.log("fecha final: ", fechaComienzo);    
     console.log("fin de la carga");    
     
   }

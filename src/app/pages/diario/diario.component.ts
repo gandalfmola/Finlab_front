@@ -24,7 +24,7 @@ export class DiarioComponent {
 
   async cargaBase() {
 
-    this.diarioService.prueba("2024-04-01", "2024-04-20")       
+    this.diarioService.prueba("2024-05-09", "2024-06-22")       
     
   }
 }

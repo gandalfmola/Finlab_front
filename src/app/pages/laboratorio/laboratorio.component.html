@@ -1,7 +1,12 @@
 <div class="contFormulario">
 
-    <app-formulario-parametros></app-formulario-parametros>
+    <app-formulario-parametros (enviaFor)="onRecibeFor($event)"></app-formulario-parametros>
 
-    <app-registro-list></app-registro-list>
+    
+</div>
 
+
+<div *ngIf="arrSubidas">
+    
+    <app-subida-list [arrSubidasPintar]="arrSubidas"></app-subida-list>
 </div>

@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DesplegableIntervaloComponent } from './components/desplegable-intervalo/desplegable-intervalo.component';
 import { FormularioParametrosComponent } from './components/formulario-parametros/formulario-parametros.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SubidaListComponent } from './components/subida-list/subida-list.component';
+import { SubidaCardComponent } from './components/subida-card/subida-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RegistroCardComponent,
     RegistroListComponent,
     DesplegableIntervaloComponent,
-    FormularioParametrosComponent
+    FormularioParametrosComponent,
+    SubidaListComponent,
+    SubidaCardComponent
   ],
   imports: [
     BrowserModule,

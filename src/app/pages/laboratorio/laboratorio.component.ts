@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Iregistro } from 'src/app/interfaces/registro.interface';
 import { LaboratorioService } from 'src/app/services/laboratorio.service';
 
@@ -9,12 +9,14 @@ import { LaboratorioService } from 'src/app/services/laboratorio.service';
 })
 export class LaboratorioComponent {
 
-  arrSubidas!: Iregistro[];
+  // arrSubidas!: Iregistro[];
+  arrSubidas!: any[];
 
   laboratorioService = inject(LaboratorioService)
 
-  async pulsaEnviar() {
-    // this.laboratorioService.getTramos()
+  onRecibeFor($event:any[]) {
+    console.log("Subidas pasa por el padre", $event);
+    this.arrSubidas = $event
   }
 
 }

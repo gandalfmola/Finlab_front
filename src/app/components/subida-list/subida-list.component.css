@@ -1,0 +1,22 @@
+article {
+    width: 90%;
+    /* height: 5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: solid black 4px;
+    margin: 10px auto;    
+    /* padding: 5px; */
+    background-color: white;  
+    opacity: 1;     
+}
+
+p {
+    font-size: 20px;
+    text-align: center;    
+    /* padding: 10px;        */
+    margin: 0;
+    width: 100%;  
+    opacity: 1;    
+}

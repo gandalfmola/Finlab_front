@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, Output, inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { LaboratorioService } from 'src/app/services/laboratorio.service';
 
@@ -13,7 +13,7 @@ export class FormularioParametrosComponent {
 
   laboratorioService = inject(LaboratorioService)
 
-  
+  @Output() enviaFor: EventEmitter<any[]> = new EventEmitter()
 
   constructor() {
     this.formulario = new FormGroup({
@@ -31,6 +31,8 @@ export class FormularioParametrosComponent {
     console.log(typeof seleccionFor.subida);
     
     const response = await this.laboratorioService.getTramos(seleccionFor.subida, seleccionFor.lapso, seleccionFor.beneficio)
+    // console.log(response);
+    this.enviaFor.emit(response)
     
     
   }

@@ -1,0 +1,11 @@
+<section>
+
+    <article>
+        <p>Longitud de subidas: {{arrSubidasPintar.length}}</p>
+    </article>
+
+    <article *ngFor="let subida of arrSubidasPintar">
+        <app-subida-card [subidaPintar]="subida"></app-subida-card>
+    </article>
+
+</section>

@@ -1,22 +1,30 @@
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 article {
-    width: 90%;
-    /* height: 5%; */
+    /* width: 30%; */
+    background-color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    border: solid black 4px;
-    margin: 10px auto;    
-    /* padding: 5px; */
+    border: solid black 3px;
     background-color: white;  
     opacity: 1;     
 }
 
-p {
-    font-size: 20px;
-    text-align: center;    
-    /* padding: 10px;        */
-    margin: 0;
-    width: 100%;  
-    opacity: 1;    
+
+#longitud {
+    width: 100%;
+}
+
+app-subida-card {
+    align-items: center;
+    justify-content: center;
 }

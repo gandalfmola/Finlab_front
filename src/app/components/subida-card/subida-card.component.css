@@ -1,0 +1,33 @@
+#empresa {
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+div.empresa {
+    text-align: center;
+    border: solid black 3px;
+    background-color: rgb(206, 154, 154);
+    
+}
+
+div.resto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(168, 168, 219);
+    padding: 5px;
+    border: solid black 3px;
+    border-top: none;
+}
+
+p {
+    width: 100%;
+    padding: 5px;
+}
+
+p.titulos {
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+}

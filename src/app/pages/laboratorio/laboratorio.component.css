@@ -2,3 +2,29 @@
 .contFormulario {
     background-color: antiquewhite;
 }
+
+app-formulario-parametros {
+    
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subidas {
+    width: 100%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+app-subida-list {
+    margin: 10px auto;
+    background-color:blanchedalmond;
+    width: 90%;
+    
+}
